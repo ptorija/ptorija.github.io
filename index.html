@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preload" href="styles.css" as="style" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>AMM</title>
   </head>
   <body>
@@ -31,9 +35,51 @@
 
     <section id="contacto"></section>
 
-    <section id="galeria"></section>
+    <section id="galeria">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/IMG_1.webp" alt="Image 1" class="gallery-image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/IMG_2.webp" alt="Image 2" class="gallery-image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/IMG_3.webp" alt="Image 3" class="gallery-image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/IMG_4.webp" alt="Image 4" class="gallery-image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/IMG_5.webp" alt="Image 5" class="gallery-image" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
     <script src="code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
     <footer></footer>
   </body>
