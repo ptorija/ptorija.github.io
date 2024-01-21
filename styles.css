@@ -98,7 +98,7 @@ section{
 }
 
 #galeria {
-    background-color: #BEB7A4;
+    background-color: #646057;
     align-items: center;
 }
 
@@ -121,7 +121,8 @@ section{
 
 .swiper-pagination-bullet {
     background-color: white !important;
-  }
+}
+
 .gallery-image {
     height: 70vh;
     width: 75vw;
