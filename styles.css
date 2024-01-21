@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
+    padding: 0.5vh;
     width: 100%;
 }
 
@@ -110,9 +110,18 @@ section{
 }
 
 .swiper-button-next{
-    color: white;
+    color: white !important;
+    margin-right: 2vw;
 }
 
+.swiper-button-prev{
+    color: white !important;
+    margin-left: 2vw;
+}
+
+.swiper-pagination-bullet {
+    background-color: white !important;
+  }
 .gallery-image {
     height: 70vh;
     width: 75vw;
@@ -120,7 +129,7 @@ section{
     max-width: 80vw;
     max-height: 100%;
     transition: transform 0.5s ease-in-out;
-    margin: auto 5em;
+    margin-left: 12vw;
 }
 
 /* Media query para teléfonos */

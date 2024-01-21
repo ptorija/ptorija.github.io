@@ -17,9 +17,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Add 'active' class to the current navigation link
         document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-        console.log('Active Section: ', id);
       };
     });
   }; 
+
+
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    speed: 700,
+  });
 
 });
