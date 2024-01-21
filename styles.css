@@ -1,19 +1,16 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden; 
-}
-
-.solid-color-bg {
-    background-color: #646057;
+    scroll-behavior: smooth; 
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     right: 10%;
     top: 30px;
     left: 10%;
@@ -24,41 +21,45 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 1vw;
     width: 100%;
 }
 
-.nav-link {
+nav a {
     color: white;
     text-decoration: none;
     font-size: 25px;
-    transition: color 0.3s ease;
+    transition: 0.3s ease;
 }
 
-.nav-link.active {
+nav a.active {
     border-bottom: 2px solid white;
 }
 
-.nav-link:hover {
+nav a:hover{
     color: #b3b3b3;
     border-bottom-color: #b3b3b3;
 }
 
-.main-section {
+section{
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
 
-.main-section img {
+.background-inicio {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background-image: url('images/BACKGROUND.webp');
+    background-size: cover;
+    background-position: center;
     object-position: center bottom;
-    opacity: 0.9; 
 }
 
-.overlay {
+.overlay-inicio {
     position: absolute;
     top: 0;
     left: 0;
@@ -68,32 +69,61 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     background-color: rgba(43, 43, 43, 0.4);
-    width: 100%;
-    height: 100%;
 }
 
-
-.overlay-content {
+.content-inicio {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 25%;
     padding: 10%;
     color: white;
-    line-height: 1.5;
-    font-size: 20px;
+    line-height: 2;
+    font-size: 2.2vh;
     align-items: left;
 }
 
-
-.overlay-content img {
+.content-inicio img {
     width: 100%; 
-    height: 30%; 
-    margin-bottom: 70px; 
+    margin-bottom: 2.5em;
 }
 
-
-.overlay-content h1, .overlay-content p {
+.content-inicio h1,
+.content-inicio p {
     margin: 0;
+}
+
+#contacto {
+    background-color: #646057;
+}
+
+#galeria {
+    background-color: #BEB7A4;
+}
+
+/* Media query para teléfonos */
+@media only screen and (max-width: 767px) {
+    nav a{
+        font-size: 1.2em;
+    }
+    .content-inicio {
+        top: 50%
+    }
+    .content-inicio img{
+        height: 50%;
+    }
+
+}
+
+/* Media query para ordenadores */
+@media only screen and (min-width: 768px) {
+    nav a {
+        font-size: calc(0.6em + 1vw);
+    }
+    .content-inicio{
+        top: 14rem
+    }
+    .content-inicio img{
+        height: 27%;
+    }
 }
 
