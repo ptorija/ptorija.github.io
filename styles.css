@@ -6,6 +6,18 @@ html, body {
     scroll-behavior: smooth; 
 }
 
+@font-face {
+    font-family: 'Century Gothic Std';
+    src: url('fonts/Century_Gothic_Std.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Century Gothic Std', sans-serif;
+    font-weight: 400;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -30,6 +42,7 @@ nav a {
     text-decoration: none;
     font-size: 25px;
     transition: 0.3s ease;
+    font-family: 'Century Gothic Std', sans-serif;
 }
 
 nav a.active {
@@ -79,7 +92,7 @@ section{
     padding: 10%;
     color: white;
     line-height: 2;
-    font-size: 2.2vh;
+    font-size: 2.3vh;
     align-items: left;
 }
 
