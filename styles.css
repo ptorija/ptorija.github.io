@@ -92,7 +92,7 @@ section{
     margin-left: 8%;
     color: white;
     align-items: left;
-    top: 14rem
+    top: 45%;
 }
 
 .content-inicio img {
@@ -109,6 +109,7 @@ section{
 
 #servicios {
     background-color: #646057;
+    align-items: center;
 }
 
 #galeria {
@@ -162,10 +163,6 @@ section{
         font-size: 2.5vh;
     }
 
-}
-
-#servicios{
-    align-items: center;
 }
 
 .container {
