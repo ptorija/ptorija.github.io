@@ -216,7 +216,8 @@ footer{
     justify-content: center;
 }
 
-a:link {
+.bottom-footer a:link,
+.bottom-footer a:visited  {
     color: white;
     text-decoration: underline;
 }
