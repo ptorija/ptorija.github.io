@@ -97,9 +97,9 @@ section{
 
 .content-inicio img {
     width: 95%;
-    max-width: 95%; 
-    margin-bottom: 4em;
     height: 25%;
+    max-width: 95%; 
+    margin-bottom: 4em; 
 }
 
 .content-inicio p {
@@ -224,7 +224,7 @@ footer{
 }
 
 /* Media query para teléfonos */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 450px) {
     nav a{
         font-size: 1.2em;
     }
