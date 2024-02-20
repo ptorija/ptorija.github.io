@@ -182,6 +182,7 @@ footer{
     font-size: 2.5vh;
     width: 100%;
 }
+
 .top-footer {
     height: 15vh;
     display: flex;
@@ -190,29 +191,44 @@ footer{
 }
 
 .top-footer img {
-    margin-top: 5vh;
+    margin-top: 15vh;
     display: flex;
     height: 70%;
 }
 
-.top-footer p {
-    margin-top: 7vh;
+.direction {
+    line-height: 50%;
 }
 
-.horario{
-    margin-top: 7vh;
-    align-items: center;
-    justify-content: center;
+.direction svg {
+    margin-top: 10vh;
+    height: 11%;
+    width: 11%;
 }
 
-.horario p{
-    line-height: 70%;
-    margin-top: 0vh;
+.telephone {
+    line-height: 50%;
+}
+
+.telephone svg {
+    margin-top: 10vh;
+    height: 19%;
+    width: 19%;
+}
+
+.horario {
+    line-height: 50%;
+}
+
+.horario svg {
+    margin-top: 10vh;
+    height: 11%;
+    width: 11%;
 }
 
 .bottom-footer {
     font-size: 1.7vh;
-    margin-top: 5vh;
+    margin-top: 10vh;
     height: 8vh;
     display: flex;
     justify-content: center;
@@ -225,7 +241,7 @@ footer{
 }
 
 /* Media query para teléfonos */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
     nav a{
         font-size: 1.2em;
     }
@@ -235,25 +251,46 @@ footer{
     .content-inicio img{
         display: flex;
         width: 40vh;
-        height: 10vh;
+        height: 11vh;
     }
     .content-inicio p {
         font-size: 2.5vh;
     }
     footer {
-        font-size: 1.8vh;
+        font-size: 2vh;
         padding: 5%;
+    }
+    .top-footer{
+        align-items: center;
+        justify-content: left;
+        width: 70%;
+        flex-wrap: wrap;
+        padding: 15%;
     }
     .top-footer img {
         height: 30%;
+        margin-top: 0;
+    }
+    .direction svg{
+        margin-top: 7vh;
+        line-height: 100%;
+    }
+    .telephone svg{
+        margin-top: 5vh;
+        line-height: 100%;
+    }
+    .horario svg{
+        margin-top: 5vh;
+        line-height: 100%;
     }
     .bottom-footer{
         font-size: 1.5vh;
-        padding: 5%;
+        margin-top: 35vh;
+        padding: 10%;
+        width: 80%;
+        height: 3vh;
     }
-    .horario{
-        line-height: 100%;
-    }
+
     
 }
 

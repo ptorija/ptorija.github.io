@@ -74,11 +74,18 @@
     <footer>
       <div class="top-footer">
         <img src="images/LOGO_2.webp" />
-        <p>Plaza del Doctor Laguna 13</p>
-        
-        <p>Telf: 915745469 / +34 686343100</p>
-        
+        <div class="direction">
+          <i data-lucide="map-pin"></i>
+          <p>Plaza del Doctor Laguna 13</p>
+          <p>28009, Madrid</p>
+        </div>
+        <div class="telephone">
+          <i data-lucide="phone"></i>
+          <p>915745469</p>
+          <p>+34 686343100</p>
+        </div>
         <div class="horario">
+          <i data-lucide="calendar-clock"></i>
           <p>Lunes a Jueves: 9:00 - 17:00</p>
           <p>Viernes: 9:00 - 14:00</p>
         </div>
@@ -88,5 +95,9 @@
         <p>Copyright © 2024 Antonio Montero Martínez | Todos los derechos reservados. | <a href="aviso_legal.pdf" target="_blank">Aviso legal</a>.</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
