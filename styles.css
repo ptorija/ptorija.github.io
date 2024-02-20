@@ -96,7 +96,8 @@ section{
 }
 
 .content-inicio img {
-    width: 95%; 
+    width: 95%;
+    max-width: 95%; 
     margin-bottom: 4em;
     height: 25%;
 }
