@@ -263,7 +263,7 @@ footer{
     .top-footer{
         align-items: center;
         justify-content: left;
-        width: 68%;
+        width: 65%;
         flex-wrap: wrap;
         padding: 15%;
     }
