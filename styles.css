@@ -284,6 +284,18 @@ footer{
     .content-inicio p {
         font-size: 2.5vh;
     }
+    .swiper-button-next {
+        color: transparent !important;
+    }
+    .swiper-button-prev {
+        color: transparent !important;
+    }
+    .gallery-image {
+        height: 70vh;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+    }
     footer {
         font-size: 2.2vh;
         padding: 5%;
@@ -311,9 +323,21 @@ footer{
         margin-top: 5vh;
         line-height: 100%;
     }
+    .recognitions {
+        padding: 0 10%;
+        width: 70%;
+        margin-top: 90%;
+        flex-wrap: wrap;
+    }
+    .recognitions img {
+        display: flex;
+        height: 6vh;
+        max-width: 30vw;
+        margin-bottom: 5%;
+    }
     .bottom-footer{
         font-size: 1.6vh;
-        margin-top: 35vh;
+        margin-top: 5vh;
         padding: 10%;
         width: 80%;
         height: 3vh;
