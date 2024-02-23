@@ -201,6 +201,7 @@ footer{
 }
 
 .top-footer {
+    padding: 5% 0;
     height: 15vh;
     display: flex;
     align-items: center;
@@ -208,7 +209,6 @@ footer{
 }
 
 .top-footer img {
-    margin-top: 15vh;
     display: flex;
     height: 70%;
 }
@@ -218,7 +218,6 @@ footer{
 }
 
 .direction svg {
-    margin-top: 10vh;
     height: 11%;
     width: 11%;
 }
@@ -228,7 +227,6 @@ footer{
 }
 
 .telephone svg {
-    margin-top: 10vh;
     height: 25%;
     width: 25%;
 }
@@ -238,18 +236,31 @@ footer{
 }
 
 .horario svg {
-    margin-top: 10vh;
     height: 11%;
     width: 11%;
 }
 
+.recognitions {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.recognitions img {
+    height: 9vh;
+    max-width: 25vw;
+}
+
 .bottom-footer {
     font-size: 1.9vh;
-    margin-top: 10vh;
-    height: 8vh;
+    margin-top: 3%;
+    height: 20vh;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
+
 
 .bottom-footer a:link,
 .bottom-footer a:visited  {
