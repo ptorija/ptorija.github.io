@@ -2,8 +2,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let sections = document.querySelectorAll('section');
   let navLinks = document.querySelectorAll('header nav a');
+  let lastScrollTop = 0;
 
   window.onscroll = () => {
+     let top = window.scrollY;
+    if (top > lastScrollTop) {
+      // Scrolling down
+      document.querySelector('header').classList.add('hidden');
+    } else {
+      // Scrolling up
+      document.querySelector('header').classList.remove('hidden');
+    }
+    
+    lastScrollTop = top;
     sections.forEach(sec => {
       let top = window.scrollY;
       let offset = sec.offsetTop - 150;

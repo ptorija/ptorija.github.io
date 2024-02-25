@@ -1,7 +1,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     overflow-x: hidden; 
     scroll-behavior: smooth;
 }
@@ -13,28 +12,24 @@ html, body {
     font-style: normal;
 }
 
-p {
-    font-family: 'Century Gothic Std', sans-serif;
-    font-weight: 400;
-}
-
 header {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
     align-items: center;
     position: fixed;
-    right: 10%;
-    top: 30px;
-    left: 10%;
     z-index: 1; 
+    background-color: rgba(134, 131, 125, 1);
+    transition: opacity 0.3s ease, height 0.3s ease;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5vh;
-    width: 100%;
+    width: 80%;
+    opacity: 1;
 }
 
 nav a {
@@ -52,6 +47,16 @@ nav a.active {
 nav a:hover{
     color: #b3b3b3;
     border-bottom-color: #b3b3b3;
+}
+
+nav img {
+    width: 9%;
+}
+
+.hidden {
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.3s ease, height 0.3s ease;
 }
 
 section{
@@ -104,6 +109,8 @@ section{
 }
 
 .content-inicio p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     margin: 0;
     margin-bottom: 1em;
     font-size: 3.0vh;
@@ -111,14 +118,80 @@ section{
 
 #servicios {
     display: flex;
-    flex-direction: column;
-    background-color: #605e5c;
+    background-color: #f1f1f1;
+    justify-content: space-evenly;
+}
+
+.container {
+    width: 30%;
+    height: 40%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 20%;
+    column-gap: 20%;
+    padding: 17% 5%;
+}
+
+.container div {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-size: 3.5vh;
+    justify-content: center;
     align-items: center;
+    font-family: 'Century Gothic Std', sans-serif;
+    color: white;
+    background-color: #86837d;
+    border-radius: 1.5rem;
+}
+
+hr {
+    display: flex;
+    margin-top: 5%;
+    align-self: center;
+    position: absolute;
+    height: 75%;
+    width: 0.09%;
+    background-color: #86837d;
+    opacity: 0.5;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 50vh;
+    padding: 10% 0;
+    align-items: start;
+    font-size: 2.2vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.presentation .description {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.presentation .description img {
+    width: 50%;
+}
+
+.presentation .description p {
+    width: 50%;
+    margin-left: 3%;
+}
+
+.presentation p {
+    margin-top: 10%;
+    width: 100%;
 }
 
 #galeria {
     display: flex;
-    background-color: #605e5c;
+    background-color: #f1f1f1;
     align-items: center;
     justify-content: center;
     z-index: 0;
@@ -131,13 +204,13 @@ section{
 }
 
 .swiper-button-next{
-    color: white !important;
-    margin-right: 2vw;
+    color: #86837d !important;
+    margin-right: 4vw;
 }
 
 .swiper-button-prev{
-    color: white !important;
-    margin-left: 2vw;
+    color: #86837d !important;
+    margin-left: 4vw;
 }
 
 .swiper-pagination-bullet {
@@ -148,61 +221,21 @@ section{
     height: 65vh;
     width: 65vw;
     object-fit: cover;
-    max-width: 80vw;
-    max-height: 100%;
     transition: transform 0.5s ease-in-out;
-}
-
-.container {
-	width: 80%;
-    height: 15vh;
-	display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5%;
-    padding: 5%;
-    margin-top: 5%;
-}
-
-.container div{
-    height: 50%;
-    width: 70%;
-	padding: 5%;
-	font-size: 3.5vh;
-	font-family: 'Century Gothic Std', sans-serif;
-	color: white;
-    background-color: #86837d;
-    border-radius: 1.5rem;
-}
-
-.presentation{
-    width: 50%;
-    display: flex;
-    height: 40vh;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.presentation img{
-    height: 90%;
-    margin-right: 10%;
-}
-
-.presentation p{
-    width: 40%;
 }
 
 footer{
     background-color: #86837d;
     color: white;
-    font-size: 2.7vh;
+    font-size: 2.5vh;
     width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
 
 .top-footer {
     padding: 5% 0;
-    height: 15vh;
+    height: 9vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -241,7 +274,6 @@ footer{
 }
 
 .recognitions {
-    margin-top: 3%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -254,8 +286,7 @@ footer{
 
 .bottom-footer {
     font-size: 1.9vh;
-    margin-top: 3%;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,8 +301,14 @@ footer{
 
 /* Media query para teléfonos */
 @media only screen and (max-width: 650px) {
+    nav {
+        width: 85%
+    }
     nav a{
         font-size: 1.2em;
+    }
+    nav img {
+        width: 17%;
     }
     .background-inicio {
         background-position: 65% 0;
