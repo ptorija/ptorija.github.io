@@ -100,7 +100,6 @@ section{
     position: relative;
     margin-left: 8%;
     color: white;
-    align-items: left;
     top: 45%;
 }
 
@@ -115,9 +114,24 @@ section{
 .content-inicio p {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    margin: 0;
-    margin-bottom: 1em;
     font-size: 3.0vh;
+}
+
+.content-inicio .map {
+    display: flex;
+    align-items: center;
+}
+
+.content-inicio .map a{
+    margin-right: 2%;
+    color: white;
+    border-bottom: 2px solid white;
+    transition: 0.3s ease;
+}
+
+.content-inicio .map a:hover{
+    color: #b3b3b3;
+    border-bottom-color: #b3b3b3;
 }
 
 #servicios {
@@ -330,6 +344,10 @@ footer{
     }
     .content-inicio p {
         font-size: 2.5vh;
+    }
+    .content-inicio .map a:hover{
+        color: white;
+        border-bottom-color: white;
     }
     #servicios {
         overflow: auto;
