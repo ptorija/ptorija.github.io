@@ -151,28 +151,33 @@ section{
 }
 
 .container {
-    width: 30%;
-    height: 40%;
+    width: 35%;
+    height: 45%;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2,1fr);
-    row-gap: 20%;
-    column-gap: 20%;
-    padding: 17% 5%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30%;
+    column-gap: 10%;
+    padding: 12% 0;
 }
 
 .container div {
     display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     justify-content: center;
     align-items: center;
     font-family: 'Century Gothic Std', sans-serif;
-    color: white;
-    background-color: #86837d;
-    border-radius: 1.5rem;
+    color: #3e3d3b;
+}
+
+.container div img {
+    height: 60%;
+    width: 60%;
+    margin-bottom: 12%;
 }
 
 hr {
@@ -191,7 +196,7 @@ hr {
     flex-direction: column;
     width: 40%;
     height: 50vh;
-    padding: 10% 0;
+    padding: 6% 0;
     align-items: start;
     font-size: 2.2vh;
     font-family: 'Inter', sans-serif;
@@ -360,29 +365,35 @@ footer{
     }
     #servicios {
         overflow: auto;
-        height: 120vh;
+        height: 150vh;
         flex-wrap: wrap;
         justify-content: center;
     }
     .container {
-        width: 70%;
+        width: 80%;
         height: 20%;
         display: flex;
         flex-wrap: wrap;
         margin-top: 10%;
         justify-content: space-between;
         padding: 5% 5%;
+        row-gap: 15%;
     }
     .container div {
         height: 50%;
-        width: 30%;
+        width: 45%;
+        font-size: 2vh;
+    }
+    .container div img{
+        width: 40%;
+        width: 40%;
     }
     hr {
         display: block; 
         position: relative; 
         height: 1px;
         width: 75%;
-        margin-top: 0;
+        margin-top: 30%;
     }
     .presentation {
         font-size: 2vh;
@@ -396,7 +407,8 @@ footer{
         height: 90%;
     }
     .presentation p {
-        width: 100%;
+        margin-left: 5%;
+        width: 90%;
     }
     .swiper-button-next {
         color: transparent !important;
