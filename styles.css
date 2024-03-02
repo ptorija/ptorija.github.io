@@ -128,16 +128,10 @@ section{
     transition: 0.3s ease;
 }
 
-.content-inicio .map svg {
-    height: 120%;
-    width: 120%;
-}
-
 .content-inicio .map a:hover{
     color: #b3b3b3;
     border-bottom-color: #b3b3b3;
 }
-
 
 .content-inicio .map p{
     margin-left: 3%;
