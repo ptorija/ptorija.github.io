@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    speed: 700,
+    speed: 1200,
   });
 
 });
