@@ -123,15 +123,24 @@ section{
 }
 
 .content-inicio .map a{
-    margin-right: 2%;
     color: white;
     border-bottom: 2px solid white;
     transition: 0.3s ease;
 }
 
+.content-inicio .map svg {
+    height: 120%;
+    width: 120%;
+}
+
 .content-inicio .map a:hover{
     color: #b3b3b3;
     border-bottom-color: #b3b3b3;
+}
+
+
+.content-inicio .map p{
+    margin-left: 3%;
 }
 
 #servicios {
