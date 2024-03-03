@@ -252,6 +252,14 @@ hr {
     transition: transform 0.5s ease-in-out;
 }
 
+#casos {
+    display: flex;
+    height: 100vh;
+    background-color: #f1f1f1;
+    align-items: center;
+    justify-content: center;
+}
+
 footer{
     background-color: #86837d;
     color: white;
