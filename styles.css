@@ -385,7 +385,7 @@ footer{
     }
     #servicios {
         overflow: auto;
-        height: 150vh;
+        height: fit-content;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -395,17 +395,16 @@ footer{
         display: flex;
         flex-wrap: wrap;
         margin-top: 10%;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 5% 5%;
         row-gap: 15%;
     }
     .container div {
-        height: 50%;
-        width: 45%;
+        height: 17vh;
+        width: 17vh;
         font-size: 2vh;
     }
     .container div img{
-        width: 40%;
         width: 40%;
     }
     hr {
@@ -413,7 +412,8 @@ footer{
         position: relative; 
         height: 1px;
         width: 75%;
-        margin-top: 30%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
     .presentation {
         font-size: 2vh;
@@ -423,12 +423,27 @@ footer{
         height: 40%;
         padding: 0 0;
     }
+    .presentation .description {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 15%;
+    }
     .presentation .description img {
-        height: 90%;
+        width: 50%;
+        margin-top: 0;
     }
     .presentation p {
         margin-left: 5%;
         width: 90%;
+    }
+    .curriculum p {
+        margin-left: 5%;
+        width: 90%;
+        font-size: 2vh;
+    }
+    .curriculum b {
+        margin-left: 5%;
     }
     .swiper-button-next {
         color: transparent !important;
