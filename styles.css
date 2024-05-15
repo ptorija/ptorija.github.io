@@ -106,7 +106,7 @@ section{
 .content-inicio img {
     display: flex;
     width: 35vw;
-    height: 9vw;
+    height: 10vw;
     max-width: 95%; 
     margin-bottom: 4em; 
 }
@@ -120,6 +120,7 @@ section{
 .content-inicio .map {
     display: flex;
     align-items: center;
+    min-width: 46vw;
 }
 
 .content-inicio .map a{
@@ -141,7 +142,7 @@ section{
     display: flex;
     height: 100vh;
     background-color: #f1f1f1;
-    justify-content: space-evenly;
+    justify-content: start;
 }
 
 .container {
@@ -149,11 +150,10 @@ section{
     height: 45%;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 30%;
-    column-gap: 10%;
-    padding: 12% 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10%;
+    padding: 10% 2%;
 }
 
 .container div {
@@ -161,16 +161,16 @@ section{
     flex-direction: column;
     height: 100%;
     width: 100%;
-    font-size: 2.5vh;
+    font-size: 2.8vh;
     justify-content: center;
     align-items: center;
     font-family: 'Century Gothic Std', sans-serif;
-    color: #3e3d3b;
+
 }
 
 .container div img {
-    height: 60%;
-    width: 60%;
+    height: 40%;
+    width: 40%;
     margin-bottom: 12%;
 }
 
@@ -178,42 +178,60 @@ hr {
     display: flex;
     margin-top: 5%;
     align-self: center;
-    position: absolute;
     height: 75%;
     width: 0.09%;
     background-color: #86837d;
     opacity: 0.5;
+    margin-left: 0;
+    margin-right: 5%;
 }
 
 .presentation {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 55%;
     height: 50vh;
     padding: 6% 0;
     align-items: start;
-    font-size: 2.2vh;
     font-family: 'Inter', sans-serif;
 }
 
 .presentation .description {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 5%;
+    width: 80%;
 }
 
 .presentation .description img {
-    width: 50%;
+    width: 38%;
+    margin-top: 8%;
 }
 
 .presentation .description p {
-    width: 50%;
-    margin-left: 3%;
+    height: fit-content;
+    font-size: 2.3vh;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.presentation .description p .title{
+    font-size: 2.8vh;
 }
 
 .presentation p {
-    margin-top: 10%;
     width: 100%;
+    font-size: 2.2vh;
+}
+
+.curriculum .dates {
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.curriculum p {
+    margin-top: 3%;
 }
 
 #galeria {
