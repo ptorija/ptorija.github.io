@@ -219,7 +219,6 @@ hr {
     font-size: 4vh;
 }
 
-
 .curriculum {
     align-self: center;
     margin-top:3vh;
@@ -238,7 +237,7 @@ hr {
 }
 
 .curriculum button:hover {
-    opacity:0.71;
+    opacity:0.70;
 }
 
 .curriculum-section {
@@ -266,13 +265,13 @@ hr {
     content: "-"; 
     color: #86837d; 
     margin-right: 10px; 
-    position: absolute; /* Position the dash absolutely */
-    left: -20px; /* Adjust the position of the dash */
+    position: absolute; 
+    left: -20px; 
 }
 
 #curriculum li span {
     display: inline-block;
-    white-space: pre-wrap; /* Preserve line breaks */
+    white-space: pre-wrap; 
 }
 
 #galeria {
@@ -481,13 +480,25 @@ footer{
         margin-left: 5%;
         width: 90%;
     }
-    .curriculum p {
-        margin-left: 5%;
-        width: 90%;
-        font-size: 2vh;
+    .curriculum {
+        width: 40vw;
     }
-    .curriculum b {
-        margin-left: 5%;
+    .curriculum button {
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+    .curriculum-section {
+        height: 140vh;
+        align-items: start;
+    }
+    #curriculum ul {
+        margin-right: 4%;
+        margin-left: 8%;
+        column-count: 1;
+        column-gap: 0;
+    }
+    #curriculum li {
+        font-size: 2.2vh;
     }
     .swiper-button-next {
         color: transparent !important;
