@@ -407,20 +407,31 @@ footer{
     nav img {
         width: 17%;
     }
+    .overlay-inicio {
+        background-color: rgba(43, 43, 43, 0.3);
+    }
     .background-inicio {
-        background-position: 65% 0;
+        background-position: 40% 0;
         object-position:  right;
     }
     .content-inicio {
         top: 50%;
+        width: 95%;
+        margin-left: 0;
+        align-self: center;
     }
     .content-inicio img{
         display: flex;
-        width: 40vh;
-        height: 11vh;
+        max-width: 100%;
+        width: 100%;
+        height: 13vh;
+    }
+    .content-inicio .map {
+        margin-left: 5%;
     }
     .content-inicio p {
         font-size: 2.5vh;
+        margin-left: 5%;
     }
     .content-inicio .map a:hover{
         color: white;
