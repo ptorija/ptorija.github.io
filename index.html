@@ -10,7 +10,11 @@
       name="keywords"
       content="Antonio Montero Martínez, dentista, Madrid, calidad, odontología, mejor"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preload" href="styles.css" as="style" />
     <link
@@ -92,15 +96,27 @@
           </p>
         </div>
         <div class="curriculum">
-          <p>Miembro Titular de la Asociación Española de Endodoncia</p>
-          <p>Miembro Internacional de la Asociación Americana de Endodoncia</p>
-          <b>2016-2023</b>
-          <p class="dates">Presidente del Colegio de Odontólogos de Madrid</p>
-          <b>2012-2016</b>
-          <p class="dates">Vicepresidente de la comisión científica del Colegio de Odontólogos I Región</p>
-
+          <button onclick="toggleCurriculum()">Currículum</button>
         </div>
       </div>
+    </section>
+
+    <section id="curriculum" style="display: none;" class="curriculum-section">
+      <ul>
+        <li><span>Licenciado en Odontología. Universidad Complutense de Madrid (1994).</span></li>
+        <li><span>Especialista universitario en Implantología Oral. Universidad Complutense de Madrid (1995)</span></li>
+        <li><span>Especialista Universitario en Endodoncia. Universidad Complutense de Madrid (1996)</span></li>
+        <li><span>Profesor Asociado del Dpto. de Odontología Conservadora. UCM.</span></li>
+        <li><span>Profesor del Máster de Endodoncia de la Institución Universitaria Southern Mississippi (1998-2004)</span></li>
+        <li><span>Codirector del Máster de Endodoncia Universidad Complutense de Madrid</span></li>
+        <li><span>Miembro Titular de la Asociación Española de Endodoncia</span></li>
+        <li><span>Miembro Internacional de la Asociación Americana de Endodoncia</span></li>
+        <li><span>Premio Científico Anual Colegio de Odontólogos I Región “Profesor D. Pedro Ruiz de Temiño Malo” 2002</span></li>
+        <li><span>Secretario Tesorero de la Asociación Española de Endodoncia (2008-2012)</span></li>
+        <li><span>Vicepresidente de la comisión científica del Colegio de Odontólogos I Región (2012-2016)</span></li>
+        <li><span>Presidente del Colegio de Odontólogos de Madrid (2016-2023)</span></li>
+        <li><span>Mastering escellence in Surgical Endodontics. Dott. Arnaldo Castellucci. Florencia, Italia</span></li>
+      </ul>      
     </section>
 
     <section id="galeria">
@@ -142,9 +158,6 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-
-    <script src="code.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!--<section id="casos"></section>-->
 
