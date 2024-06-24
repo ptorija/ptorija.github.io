@@ -6,13 +6,6 @@ html, body {
     min-height: 100vh;
 }
 
-@font-face {
-    font-family: 'Century Gothic Std';
-    src: url('fonts/Century_Gothic_Std.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 header {
     display: flex;
     width: 100%;
@@ -23,6 +16,10 @@ header {
     z-index: 1; 
     background-color: rgba(134, 131, 125, 1);
     transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+a {
+    color: white;
 }
 
 nav {
@@ -136,6 +133,10 @@ section{
 
 .content-inicio .map p{
     margin-left: 3%;
+}
+
+.phone-link {
+    text-decoration: none; 
 }
 
 #servicios {
@@ -436,6 +437,9 @@ footer{
     .content-inicio .map a:hover{
         color: white;
         border-bottom-color: white;
+    }
+    .phone-link {
+        text-decoration: underline; 
     }
     #servicios {
         overflow: auto;
