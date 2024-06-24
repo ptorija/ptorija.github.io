@@ -138,15 +138,6 @@ section{
     margin-left: 3%;
 }
 
-.phone-link {
-    color: white; 
-    text-decoration: none;
-}
-
-.phone-link:hover {
-    text-decoration: underline;
-}
-
 #servicios {
     display: flex;
     height: 100vh;
